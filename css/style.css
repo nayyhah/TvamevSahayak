@@ -1196,6 +1196,37 @@ a:focus {
     color: #999999;
 }
 
+.data{
+    display: flex;
+}
+
+.data .content{
+    padding: 50px;
+    width: 75%;
+    margin: auto;
+}
+
+.data .content p{
+    text-align: justify;
+    color: #797979;
+}
+
+.data .content h2{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .data{
+        display: block;
+    }
+
+    .data .content {
+        width: 90%;
+        margin: auto;
+    }
+}
+
 
 /*******************************/
 /******** Portfolio CSS ********/
