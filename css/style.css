@@ -862,6 +862,17 @@ a:focus {
     padding: 45px 0 15px 0;
 }
 
+.team .row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    /* position: relative; */
+    /* left: 123px; */
+    justify-content: center;
+}
+
 .team .team-item {
     position: relative;
     margin-bottom: 30px;
@@ -2073,3 +2084,4 @@ a:focus {
     color: white;
     transform: rotateY(180deg);
   }
+  
