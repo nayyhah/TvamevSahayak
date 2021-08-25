@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+.blog{
+margin-left: 20px;
+}
 body {
     color: #797979;
     background: #ffffff;
@@ -868,8 +871,6 @@ a:focus {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    /* position: relative; */
-    /* left: 123px; */
     justify-content: center;
 }
 
