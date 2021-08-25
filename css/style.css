@@ -2085,4 +2085,12 @@ a:focus {
     color: white;
     transform: rotateY(180deg);
   }
+
+  .flip-card-back .btn{
+    
+    padding-top: 23px;
+}
+.flip-card-back .btn:hover{
+    color: rgb(98, 0, 255);
+}
   
