@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+.blog{
+margin-left: 20px;
+}
 body {
     color: #797979;
     background: #ffffff;
@@ -851,137 +854,6 @@ a:focus {
 }
 
 
-/*******************************/
-/********* Pricing CSS *********/
-/*******************************/
-.price {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.price .price-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.price .price-header,
-.price .price-body,
-.price .price-footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    background: #ffffff;
-    overflow: hidden;
-}
-
-.price .price-header {
-    padding: 30px;
-    background: #F7CAC9;
-    color: #343148;
-}
-
-.price .price-item.featured-item .price-header {
-    background: #343148;
-    color: #F7CAC9;
-}
-
-.price .price-status {
-    margin-top: -30px;
-    text-align: right;
-}
-
-.price .price-status span {
-    position: relative;
-    display: inline-block;
-    height: 30px;
-    right: -30px;
-    padding: 7px 10px;
-    text-align: center;
-    color: #343148;
-    font-size: 14px;
-    line-height: 14px;
-    background: #F7CAC9;
-}
-
-.price .price-title h2 {
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.price .price-prices h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 10px;
-}
-
-.price .price-prices h2 small {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 9px;
-    margin-left: -12px;
-}
-
-.price .price-prices h2 span {
-    margin-left: 1px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.price .price-item.featured-item h2 {
-    color: #F7CAC9;
-}
-
-.price .price-body {
-    padding: 25px 0 20px 0;
-    border: 1px solid rgba(0, 0, 0, .07);
-    border-bottom: none;
-}
-
-.price .price-description ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.price .price-description ul li {
-    padding: 7px;
-    border-bottom: 1px solid rgba(0, 0, 0, .07);
-}
-
-.price .price-description ul li:last-child {
-    border: none;
-}
-
-.price .price-action {
-    border: 1px solid rgba(0, 0, 0, .07);
-    border-top: none;
-}
-
-.price .price-action a.btn {
-    margin-bottom: 30px;
-    padding: 12px 20px;
-    color: #343148;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 0;
-    background: #F7CAC9;
-    transition: .3s;
-}
-
-.price .price-action a:hover,
-.price .price-item.featured-item .price-action a {
-    color: #F7CAC9;
-    background: #343148;
-}
-
-.price .price-item.featured-item .price-action a:hover {
-    color: #343148;
-    background: #F7CAC9;
-}
 
 
 /*******************************/
@@ -2020,3 +1892,197 @@ a:focus {
         text-align: center;
     }
 }
+
+
+
+
+
+/*******************************/
+/********* Pricing CSS *********/
+/*******************************/
+.price {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.price .price-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.price .price-header,
+.price .price-body,
+.price .price-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.price .price-header {
+    padding: 30px;
+    background: #F7CAC9;
+    color: #343148;
+}
+
+.price .price-item.featured-item .price-header {
+    background: #343148;
+    color: #F7CAC9;
+}
+
+.price .price-status {
+    margin-top: -30px;
+    text-align: right;
+}
+
+.price .price-status span {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    right: -30px;
+    padding: 7px 10px;
+    text-align: center;
+    color: #343148;
+    font-size: 14px;
+    line-height: 14px;
+    background: #F7CAC9;
+}
+
+.price .price-title h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price .price-prices h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.price .price-prices h2 small {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 9px;
+    margin-left: -12px;
+}
+
+.price .price-prices h2 span {
+    margin-left: 1px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price .price-item.featured-item h2 {
+    color: #F7CAC9;
+}
+
+.price .price-body {
+    padding: 25px 0 20px 0;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: none;
+}
+
+.price .price-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.price .price-description ul li {
+    padding: 7px;
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+}
+
+.price .price-description ul li:last-child {
+    border: none;
+}
+
+.price .price-action {
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-top: none;
+}
+
+.price .price-action a.btn {
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    color: #343148;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background: #F7CAC9;
+    transition: .3s;
+}
+
+.price .price-action a:hover,
+.price .price-item.featured-item .price-action a {
+    color: #F7CAC9;
+    background: #343148;
+}
+
+.price .price-item.featured-item .price-action a:hover {
+    color: #343148;
+    background: #F7CAC9;
+}
+
+/*******************************/
+/*********** Campaigns CSS **********/
+/*******************************/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    display: inline-block;
+    margin: 10px;
+    width: auto;
+    height: 12px;
+    background: #F7CAC9;
+    background-color: transparent;
+    width: 310px;
+    height: 230px;
+    border: 2px solid #e794ce;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: relative;
+    left: 4%;
+
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
