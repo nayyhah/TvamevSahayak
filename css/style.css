@@ -336,6 +336,9 @@ a:focus {
     margin-right: 10px;
 }
 
+.hero .hero-text .quote{
+    font-size:25px ;
+}
 @media (max-width: 991.98px) {
     .hero .hero-text {
         padding: 0 15px;
@@ -344,7 +347,9 @@ a:focus {
     .hero .hero-text h1 {
         font-size: 35px;
     }
-    
+  .hero .hero-text .quote{
+        font-size:18px ;
+    }
     .hero .hero-text p {
         font-size: 16px;
     }
