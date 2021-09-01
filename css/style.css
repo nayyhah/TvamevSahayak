@@ -2139,3 +2139,48 @@ a:focus {
 .flip-card-back .btn:hover{
     color: rgb(98, 0, 255);
 }
+
+
+
+/*******************************/
+/*********** Campaigns CSS **********/
+/*******************************/
+.pagination-c .pagination-arrow{
+    display: none;
+}
+.pagination-c ul .page-item.disabled{
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+.pagination-c ul .page-item .page-link{
+    background-color: #343148 !important;
+    border-color: #343148 !important;
+    color: #d8b843;
+    font-weight: bold;
+}
+.pagination-c ul .page-item.active .page-link, .pagination-c ul .page-item .page-link:hover{
+    background-color: #d8b843 !important;
+    border-color: #d8b843 !important;
+    color: #343148 !important;
+    font-weight: bold;
+}
+@media (max-width:584px){
+    .pagination-c .pagination.justify-content-center{
+        justify-content: space-between !important;
+        margin: 0 !important;
+        padding: 0!important;
+    }
+    .pagination-c .pagination-arrow{
+        display: inline;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .pagination-c .pre-next{
+        display: none;
+    }
+    .pagination-c ul .page-item.number{
+        display: none;
+        font-size: 50px !important;
+    }
+}
+/* Pagination CSS Ends */
