@@ -1209,6 +1209,8 @@ a:focus {
     padding: 50px;
     width: 75%;
     margin: auto;
+    box-shadow: 5px 5px 8px 8px #888888;
+    border-radius: 12px;
 }
 
 .data .content p{
@@ -1219,6 +1221,28 @@ a:focus {
 .data .content h2{
     text-align: center;
 }
+
+.data .content .blog_author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.data>.content>.blog_author>img{
+   height: 238px;
+   width: 260px;
+   border-radius: 6px;
+}
+.data>.content>.blog_author>p{
+    color: rgb(78, 73, 73);
+    font-weight: bold;
+ }
+
+ .auther{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 @media screen and (max-width: 1000px) {
