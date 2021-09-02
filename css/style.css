@@ -2184,3 +2184,47 @@ a:focus {
     }
 }
 /* Pagination CSS Ends */
+
+.campaigntext{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.paintings{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: gray solid;
+}
+.imda{
+    display:inline;
+}
+.content1{
+    block-size: 50px;
+    width: 50%;
+    float: right;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.content2{
+    block-size: 50px;
+    width: 50%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.paintings{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: gray solid;
+    float: right;
+}
+.painting1{
+    border: gray solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
