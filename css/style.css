@@ -2209,6 +2209,7 @@ a:focus {
 }
 /* Pagination CSS Ends */
 
+/*campaigns section*/
 .campaigntext{
     margin-left: 20%;
     margin-right: 20%;
@@ -2251,4 +2252,46 @@ a:focus {
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+@media screen and (min-width:100px) and (max-width:900px) {
+    .imda{
+        display:block;
+    }
+    .campaigntext{
+
+        border: none;        float: none;block-size: 100%; 
+
+
+    }
+    .paintings{
+        border-radius: 100%;
+        margin: none;
+        display:block;
+        border: none;        float: none;block-size: 100%; 
+
+    }
+    .content1{
+        display:block;
+        border: none;        float: none;block-size: 100%; 
+
+    }
+    .content2{
+        display:block;
+        border: none;        float: none;block-size: 100%; 
+
+    }
+    .paintings{
+        border-radius: 100%;
+        display:block;
+        border: none;
+        float: none;block-size: 100%; 
+    }
+    .painting1{
+        display:block;
+        border: none;
+        border-radius: 100%;
+        block-size: 100%;        float: none;
+
+    }
 }
