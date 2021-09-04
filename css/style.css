@@ -2304,12 +2304,19 @@ a:focus {
 /*******************************/
 
 .campaigns .competeion-details{
-    max-width: 400px;
+    max-width: 450px;
 }
 @media (max-width:991px){
     .campaigns{
         text-align: center;
         flex-direction: column;
+    }
+    .campaigns .winners-details{
+        padding: 0 5px !important;
+        margin: 0 !important;
+    }
+    .campaigns .competeion-details{
+        margin:0 30px !important;
     }
     .campaigns .competeion-details, .campaigns .competeion-details p{
         max-width: none;
