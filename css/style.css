@@ -2306,7 +2306,7 @@ a:focus {
 .campaigns .competeion-details{
     max-width: 400px;
 }
-@media (max-width:991px) {
+@media (max-width:991px){
     .campaigns{
         text-align: center;
         flex-direction: column;
