@@ -2295,3 +2295,27 @@ a:focus {
 
     }
 }
+
+
+
+
+/*******************************/
+/*********** Campaigns Page 2 CSS **********/
+/*******************************/
+
+.campaigns .competeion-details{
+    max-width: 400px;
+}
+@media (max-width:991px) {
+    .campaigns{
+        text-align: center;
+        flex-direction: column;
+    }
+    .campaigns .competeion-details, .campaigns .competeion-details p{
+        max-width: none;
+        padding: 0 !important;
+    }
+}
+
+
+/* Campaigns Page  2 CSS Ends */
