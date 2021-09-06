@@ -59,6 +59,8 @@
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
   user-select: none;
+  margin: 25% 0 50% 0;
+  margin-bottom: 40%;
 }
 
 /* Place the "forward button" to the right */
@@ -81,7 +83,6 @@
   bottom: 10px;
   width: 100%;
   text-align: center;
-  margin-bottom: 10%;
 }
 
 /* Worknumbering (1/3 etc) */
@@ -127,9 +128,15 @@
   to {opacity: 2}
 }
 .sliderbg{
-    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/28/80/melting-chocolate-dripping-on-white-background-vector-22972880.jpg');
     width: 100%;
-    height: 500%;
+    max-height: 100%;
+    background-color: antiquewhite;
+
+}
+.back,.forward1{
+  margin-top: 10%;
+  margin-bottom: 100%;
+  
 }
 </style>
 </head>
@@ -214,27 +221,25 @@
     <!-- Full images with numbers and message Info -->
     <div class="Containers0">
       <div class="MessageInfo">1 / 3</div>
-      <p align="center" style="margin-top: 50%;margin-bottom: 50%;padding-top: 40%;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
+      <p align="center" style="margin-top: 30%;margin-bottom:15%;padding-top:20%;font-size: large;margin-left: 25%;margin-right: 25%;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
     </p>
     </div>
   
     <div class="Containers0">
       <div class="MessageInfo">2 / 3</div>
-      <p align="center" style="margin-top: 50%;margin-bottom: 50%;padding-top: 40%;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
+      <p align="center" style="margin-top: 30%;margin-bottom:15%;padding-top:20%;font-size: large;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
       </p>
-      <div class="Info">Second Caption</div>
     </div>
   
     <div class="Containers0">
       <div class="MessageInfo">3 / 3</div>
-      <p align="center" style="margin-top: 50%;margin-bottom: 50%;padding-top: 40%;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
-      </p>
-      <div class="Info">Third Caption</div>
+            <p align="center" style="margin-top: 30%;margin-bottom:15%;padding-top:20%;font-size: large;">Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.
+    </p>
     </div>
   
     <!-- Back and forward buttons -->
-    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    <a class="Back back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward forward1" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
   
