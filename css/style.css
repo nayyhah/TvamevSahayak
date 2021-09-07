@@ -1256,6 +1256,32 @@ a:focus {
     }
 }
 
+.campaign{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+}
+
+
+.campaign1, .campaign2, .campaign3{
+    background-color: rgb(19, 18, 18);
+    height: 120px;
+    width: 212px;
+    margin-top: -35px;
+    margin-left: 27px;
+    color: rgb(202, 196, 196);
+   backface-visibility: hidden;
+   border-radius: 8px;
+}
+
+
+@media screen and (max-width: 300px) {
+    .campaign1, .campaign2, .campaign3>img{
+        height: 170px;
+        width: 200px;
+    } 
+    
+}
 
 /*******************************/
 /******** Portfolio CSS ********/
