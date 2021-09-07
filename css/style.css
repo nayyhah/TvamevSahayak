@@ -1271,7 +1271,7 @@ a:focus {
     margin-left: 27px;
     color: rgb(202, 196, 196);
     backface-visibility: hidden;
-    -moz-backface-visibility: hidden
+    -moz-backface-visibility: hidden;
     border-radius: 8px;
 }
 
@@ -2489,23 +2489,29 @@ a:focus {
     }
   
     .u-section-1 .u-icon-1 {
+        height: 120px;
+        width: 120px;
       color: rgb(255, 255, 255) !important;
     }
-  }
-  
-  @media (max-width: 991px) {
-    .u-section-1 .u-sheet-1 {
-      min-height: 283px;
+}
+
+@media (max-width: 991px) {
+      .u-section-1 .u-icon-1 {
+          height: 80px;
+          width: 80px;
+      }
+      .u-section-1 .u-sheet-1 {
+          min-height: 283px;
+        }
+        
+        .u-section-1 .u-group-1 {
+            width: 720px;
+            min-height: 144px;
+            margin: 0 !important;
+        }
     }
-  
-    .u-section-1 .u-group-1 {
-      width: 720px;
-      min-height: 144px;
-      margin: 0 !important;
-    }
-  }
-  
-  @media (max-width: 767px) {
+    
+    @media (max-width: 767px) {
     .u-section-1 .u-sheet-1 {
       min-height: 212px;
     }
@@ -2529,7 +2535,6 @@ a:focus {
     }
   
     .u-section-1 .u-group-1 {
-      /* width: 340px; */
       width: 100%;
       min-height: 68px;
     }
