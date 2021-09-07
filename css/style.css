@@ -2501,7 +2501,7 @@ a:focus {
     .u-section-1 .u-group-1 {
       width: 720px;
       min-height: 144px;
-      margin-left: 0;
+      margin: 0 !important;
     }
   }
   
@@ -2516,18 +2516,21 @@ a:focus {
     }
   
     .u-section-1 .u-container-layout-1 {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
   
   @media (max-width: 575px) {
     .u-section-1 .u-sheet-1 {
       min-height: 133px;
+      margin: 0 !important;
+      width: 100%;
     }
   
     .u-section-1 .u-group-1 {
-      width: 340px;
+      /* width: 340px; */
+      width: 100%;
       min-height: 68px;
     }
   }
