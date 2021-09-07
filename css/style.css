@@ -1256,6 +1256,33 @@ a:focus {
     }
 }
 
+.campaign{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+}
+
+
+.campaign1, .campaign2, .campaign3{
+    background-color: rgb(19, 18, 18);
+    height: 120px;
+    width: 212px;
+    margin-top: -35px;
+    margin-left: 27px;
+    color: rgb(202, 196, 196);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+   border-radius: 8px;
+}
+
+
+@media screen and (max-width: 300px) {
+    .campaign1, .campaign2, .campaign3>img{
+        height: 170px;
+        width: 200px;
+    } 
+    
+}
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -2412,3 +2439,103 @@ a:focus {
     from {opacity: .5}
     to {opacity: 2}
   }
+
+
+  /* Dhaaga Section Starts */
+  .u-section-1 .u-sheet-1 {
+    min-height: 410px;
+  }
+  
+  .u-section-1 .u-group-1 {
+    width: 855px;
+    min-height: 410px;
+    height: auto;
+    margin: 0 auto 0 129px;
+  }
+  
+  .u-section-1 .u-container-layout-1 {
+    padding-bottom: 30px;
+  }
+  
+  .u-section-1 .u-icon-1 {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto 0 0;
+  }
+  
+  .u-section-1 .u-text-1 {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 700;
+    margin: 25px 0 0;
+  }
+  
+  .u-section-1 .u-icon-2 {
+    height: 48px;
+    width: 48px;
+    margin: 25px 0 0 auto;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 369px;
+    }
+  
+    .u-section-1 .u-group-1 {
+      min-height: 188px;
+      margin-left: 85px;
+      height: auto;
+    }
+  
+    .u-section-1 .u-icon-1 {
+      color: rgb(255, 255, 255) !important;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 283px;
+    }
+  
+    .u-section-1 .u-group-1 {
+      width: 720px;
+      min-height: 144px;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 212px;
+    }
+  
+    .u-section-1 .u-group-1 {
+      width: 540px;
+      min-height: 108px;
+    }
+  
+    .u-section-1 .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 133px;
+    }
+  
+    .u-section-1 .u-group-1 {
+      width: 340px;
+      min-height: 68px;
+    }
+  }
+
+  .dhaaga-video {
+    border-radius: 10px !important;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  /* Dhaaga Section Ends */
