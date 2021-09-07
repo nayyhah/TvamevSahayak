@@ -1270,7 +1270,8 @@ a:focus {
     margin-top: -35px;
     margin-left: 27px;
     color: rgb(202, 196, 196);
-/*    backface-visibility: hidden; */
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
    border-radius: 8px;
 }
 
