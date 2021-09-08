@@ -1271,18 +1271,20 @@ a:focus {
     margin-left: 27px;
     color: rgb(202, 196, 196);
     backface-visibility: hidden;
-    -moz-backface-visibility: hidden
+    -moz-backface-visibility: hidden;
     border-radius: 8px;
 }
 
-
-/* @media screen and (max-width: 300px) {
-    .campaign1, .campaign2, .campaign3>img{
-        height: 170px;
-        width: 200px;
+@media screen and (min-width: 676px) {
+    .modal1 {
+        min-height : 600px; 
+    }
+     .modal-body>.image>img{
+        margin-top: 7rem;
     } 
-    
-} */
+}
+
+
 
 /*******************************/
 /******** Portfolio CSS ********/
