@@ -2549,3 +2549,100 @@ a:focus {
   }
 
   /* Dhaaga Section Ends */
+
+
+
+
+#testi #demo {
+    margin: auto
+}
+
+#testi .carousel-caption {
+    position: initial;
+    z-index: 10;
+    /* padding: 5rem 8rem; */
+    padding: 0 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    /* line-height: 2rem */
+}
+
+@media(max-width:767px) {
+    #testi .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+}
+
+
+/* Index Page Testimonial Starts */
+#testi .carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    /* margin-top: 2rem */
+}
+
+@media(max-width:767px) {
+    #testi .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+}
+
+#testi #image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #testi #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+#testi .carousel-control-prev i, #testi .carousel-control-next i {
+    /* background-color: rgb(223, 56, 89); */
+    color:#888888;
+    padding: 1.4rem;
+    font-size: 3rem !important;
+}
+
+@media(max-width:767px) {
+    #testi i {
+        padding: 0.8rem
+    }
+}
+
+#testi .carousel-control-prev {
+    justify-content: flex-start
+}
+
+#testi .carousel-control-next {
+    justify-content: flex-end
+}
+
+#testi .carousel-control-prev,
+#testi .carousel-control-next {
+    transition: none;
+    opacity: unset;
+}
+
+
+#testi .carousel-caption p i {
+    color:#717161;
+    /* padding: 1.4rem; */
+}
+
+/* Index Page Testimonial Ends */
