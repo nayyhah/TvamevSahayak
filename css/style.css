@@ -1275,14 +1275,16 @@ a:focus {
     border-radius: 8px;
 }
 
-
-/* @media screen and (max-width: 300px) {
-    .campaign1, .campaign2, .campaign3>img{
-        height: 170px;
-        width: 200px;
+@media screen and (min-width: 676px) {
+    .modal1 {
+        min-height : 600px; 
+    }
+     .modal-body>.image>img{
+        margin-top: 7rem;
     } 
-    
-} */
+}
+
+
 
 /*******************************/
 /******** Portfolio CSS ********/
