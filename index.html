@@ -25,6 +25,7 @@
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
      <!--Link for icons-->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -245,10 +246,10 @@
     <div class="discount wow zoomIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-header text-center">
-                <p>Join Us</p>
-                <h2> <span>Donate</span> Now</h2>
+                <p class="fs-3">Join Us</p>
+                <h2 class="fs-1"> <span>Donate</span> Now</h2>
             </div>
-            <div class="container discount-text">
+            <div class="container discount-text fs-5">
                 <p>
                     Donations are not required, but are highly appreciated. All funds will go to philanthropy work and will be used in making the world a better place :)
                 </p>
@@ -260,7 +261,45 @@
     <!-- Discount End -->
 
     <!-- Campaings Section Start -->
-    <div class="price">
+
+
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Campaigns</p>
+            <h2>Campaigns in Past</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top"  style="width:306px;height:226px;">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam, facilis iste consectetur quaerat rerum magni, atque perferendis quae accusamus dolores minus sapiente animi dignissimos numquam placeat odit libero ea?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top"  style="width:306px;height:226px;">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 2</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores consequatur vel enim incidunt repellat tenetur labore eaque nostrum illum error?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top"  style="width:306px;height:226px;">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 3</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore facere magnam odio, quibusdam perspiciatis rerum tempora impedit eum deleniti a mollitia corrupti praesentium necessitatibus in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- <div class="price">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>Campaigns</p>
@@ -310,8 +349,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    
     <!-- Campaigns sction end -->
 
         
@@ -378,10 +418,10 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
+    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s">
         <div class="container" id="testi">
-            <div class="section-header text-center">
-                <p>Testimonial</p>
+            <div class="section-header text-center mt-5">
+                <!-- <p>Testimonial</p> -->
                 <h2>Our Volunteer Say!</h2>
             </div>
         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -617,4 +657,13 @@
      </script>
      
 </body>
+<script>
+    if(window.innerWidth>=1800){
+        document.getElementById('testi').classList.remove('container');
+        document.getElementsByClassName('testimonial')[0].classList.add('justify-content-center');
+    }else{
+        document.getElementById('testi').classList.add('container');
+        document.getElementsByClassName('testimonial')[0].classList.remove('justify-content-center');
+    }
+</script>
 </html>
