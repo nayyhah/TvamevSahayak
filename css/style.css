@@ -2575,10 +2575,7 @@ a:focus {
         padding: 3rem 2rem;
         color: rgba(78, 77, 77, 0.856);
         text-align: center;
-        font-size: 0.7rem;
-        font-style: italic;
-        font-weight: bold;
-        line-height: 1.5rem
+        /* font-size: 0.7rem; */
     }
 }
 
@@ -2590,24 +2587,15 @@ a:focus {
     /* margin-top: 2rem */
 }
 
-@media(max-width:767px) {
-    #testi .carousel-caption img {
-        width: 4rem;
-        border-radius: 4rem;
-        margin-top: 1rem
-    }
-}
-
 #testi #image-caption {
     font-style: normal;
     font-size: 1rem;
-    margin-top: 0.5rem
+    margin-top: 0.5rem;
 }
 
 @media(max-width:767px) {
     #testi #image-caption {
         font-style: normal;
-        font-size: 0.6rem;
         margin-top: 0.5rem
     }
 }
@@ -2620,9 +2608,26 @@ a:focus {
 }
 
 @media(max-width:767px) {
+    #testi .carousel-control-prev i, #testi .carousel-control-next i {
+        display: none;
+    }
     #testi i {
         padding: 0.8rem
     }
+    #testi .carousel-item .carousel-caption{
+        padding-top: 30px;
+    }
+    #testi .carousel-item .carousel-caption p i{
+        padding: 0 10px !important;
+        margin: 0 !important;
+    }
+    #testi .section-header{
+        margin: 0;
+    }
+    
+#testi .carousel-caption p, #testi .carousel-caption, #testi .carousel-item, #testi .carousel-inner{
+    width: 100%;
+}
 }
 
 #testi .carousel-control-prev {
