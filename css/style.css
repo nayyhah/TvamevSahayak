@@ -509,6 +509,7 @@ a:focus {
 .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
+    text-align: left;
 }
 
 .about .about-img {
@@ -549,6 +550,16 @@ a:focus {
     .about .about-img {
         margin-bottom: 30px;
         height: auto;
+    }
+    .about .section-header{
+        text-align: center;
+    }
+    .about .about-text p,h2{
+        text-align: center;
+    }
+    .about .about-text .btnContainer{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1280,7 +1291,7 @@ a:focus {
         min-height : 600px; 
     }
      .modal-body>.image>img{
-        margin-top: 7rem;
+        margin-top: 5.8rem;
     } 
 }
 
