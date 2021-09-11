@@ -25,9 +25,18 @@
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!--Link for icons-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -107,7 +116,7 @@
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
                         <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
+                            <img src="img/home.png" alt="Hero Image">
                         </div>
                     </div>
                 </div>
@@ -120,13 +129,13 @@
     <div class="about wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="about-img">
-                        <img src="img/about.png" alt="Image">
+                        <img src="img/logo.png" alt="Image">
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6">
-                    <div class="section-header text-left">
+                <div class="col-lg-9 col-md-6">
+                    <div class="section-header">
                         <p>Learn About Us</p>
                         <h2>Welcome to Tvamev Sahayak</h2>
                     </div>
@@ -143,16 +152,17 @@
                             using this principle that everyone is born a helper and it is our duty to help other in
                             becoming their own and others' helpers.
                         </p>
-                        <a class="btn" href="">Learn More</a>
+                        <div class="btnContainer">
+                            <a class="btn" href="">Learn More</a>
+                        </div>
                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-
-
-    <!-- Service Start -->
+    
+     <!-- Service Start -->
     <div class="service">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -163,7 +173,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-workout"></i>
+                            <!--<i class="flaticon-workout"></i>-->
+                            <i class="fas fa-hand-holding-heart"></i>
                         </div>
                         <h3>Advocate Mental Health</h3>
                         <p>
@@ -174,7 +185,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item active">
                         <div class="service-icon">
-                            <i class="flaticon-workout-1"></i>
+                           <!-- <i class="flaticon-workout-1"></i>-->
+                            <i class="fas fa-book-reader"></i>
                         </div>
                         <h3>Reduce Illiteracy</h3>
                         <p>
@@ -185,7 +197,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-workout-2"></i>
+                            <!--<i class="flaticon-workout-2"></i>-->
+                            <i class="fas fa-female"></i>
                         </div>
                         <h3>Educate People</h3>
                         <p>
@@ -197,7 +210,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-workout-3"></i>
+                            <!--<i class="flaticon-workout-3"></i>-->
+                            <i class="fas fa-heartbeat"></i>
                         </div>
                         <h3>Advertise Sustainable Lifestyle</h3>
                         <p>
@@ -208,7 +222,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-workout-4"></i>
+                            <!--<i class="flaticon-workout-4"></i>-->
+                            <i class="fas fa-balance-scale-right"></i>
                         </div>
                         <h3>Support Women's Rights</h3>
                         <p>
@@ -220,7 +235,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-yoga-pose"></i>
+                            <!--<i class="flaticon-yoga-pose"></i>-->
+                            <i class="fas fa-rainbow"></i>
                         </div>
                         <h3>Support LGBTQ+ community</h3>
                         <p>
@@ -233,15 +249,14 @@
     </div>
     <!-- Service End -->
 
-
     <!-- Discount Start -->
     <div class="discount wow zoomIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-header text-center">
-                <p>Join Us</p>
-                <h2> <span>Donate</span> Now</h2>
+                <p class="fs-3">Join Us</p>
+                <h2 class="fs-1"> <span>Donate</span> Now</h2>
             </div>
-            <div class="container discount-text">
+            <div class="container discount-text fs-5">
                 <p>
                     Donations are not required, but are highly appreciated. All funds will go to philanthropy work and will be used in making the world a better place :)
                 </p>
@@ -252,9 +267,46 @@
     </div>
     <!-- Discount End -->
 
-
     <!-- Campaings Section Start -->
-    <div class="price">
+
+
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Campaigns</p>
+            <h2>Campaigns in Past</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col wow fadeInLeft">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 1</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis totam, facilis iste consectetur quaerat rerum magni, atque perferendis quae accusamus dolores minus sapiente animi dignissimos numquam placeat odit libero ea?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col wow fadeInUp">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 2</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores consequatur vel enim incidunt repellat tenetur labore eaque nostrum illum error?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col wow fadeInRight">
+              <div class="card h-100 d-flex justify-content-center align-items-center rounded" style="border: none;">
+                <img src="img/img1.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Campaign 3</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore facere magnam odio, quibusdam perspiciatis rerum tempora impedit eum deleniti a mollitia corrupti praesentium necessitatibus in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- <div class="price">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>Campaigns</p>
@@ -304,8 +356,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    
     <!-- Campaigns sction end -->
 
         
@@ -372,7 +425,39 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
+    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s">
+        <div class="container d-flex justify-content-center align-items-center flex-column" id="testi">
+            <div class="section-header text-center mt-5 wow fadeInUp">
+                <!-- <p>Testimonial</p> -->
+                <h2>Our Volunteer Say!</h2>
+            </div>
+        <div id="demo" class="carousel slide wow fadeInDown" data-ride="carousel" data-wow-delay="0.5s">
+            <div class="carousel-inner wow fadeInUp">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <p><i class="fas fa-quote-left px-4"></i>Life is a series of experiences and my experience with this NGO has been informative and influential. The work done here is vibrant. The environment is very accepting and warm. Its an awesome journey.<i class="fas fa-quote-right px-4"></i></p> <img src="img/gulnar.jpeg">
+                        <div id="image-caption">GULNAR</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p><i class="fas fa-quote-left px-4"></i>Tvamev Sahayak has greatly helped me make a change for the better in this society. Their events have helped me gain a different perspective, and I have learnt a lot about how I can impact the next generation and be a part of a future where everyone is educated and where people treat each other with respect and kindness.<i class="fas fa-quote-right px-4"></i></p> <img src="img/anirudh.jpg" class="img-fluid">
+                        <div id="image-caption">ANIRUDH</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <p><i class="fas fa-quote-left px-4"></i>I have been a part of Tvamev Sahayak for 2 months now, and it has been a wonderful experience starting with our 1st project Dhaga to our most recent one Pehchaan. We have successfully pulled off 3 projects and many more to come. With the well-coordinated effort of our team with each project, I feel more connected with the organization and what it stands for. The idea of making a difference and actually being able to do it is extremely empowering and motivating. I cherish being a part of this organization and hope to contribute as much as I can. ✨🌻<i class="fas fa-quote-right px-4"></i></p> <img src="img/testimonial.jpeg" class="img-fluid">
+                        <div id="image-caption">MANASVI</div>
+                    </div>
+                </div>
+            </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class="fa fa-angle-left"></i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class="fa fa-angle-right"></i> </a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-header text-center">
                 <p>Testimonial</p>
@@ -430,13 +515,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
 
     <!-- Blog Start -->
-    <div class="blog">
+    <div class="blog m-0">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>From Blog</p>
@@ -579,4 +664,13 @@
      </script>
      
 </body>
+<script>
+    if(window.innerWidth>=1800){
+        document.getElementById('testi').classList.remove('container');
+        document.getElementsByClassName('testimonial')[0].classList.add('justify-content-center');
+    }else{
+        document.getElementById('testi').classList.add('container');
+        document.getElementsByClassName('testimonial')[0].classList.remove('justify-content-center');
+    }
+</script>
 </html>
