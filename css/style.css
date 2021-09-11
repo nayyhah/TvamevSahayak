@@ -2635,13 +2635,27 @@ a:focus {
     margin-top: 0.5rem;
 }
 
+@media(max-width:1800px) {
+    #testi , .testimonial .container{
+        min-height: 530px;
+        max-height: 530px;
+    }
+}
+@media(max-width:1000px) {
+    #testi , .testimonial .container{
+        min-height: 650px;
+        max-height: 650px;
+    }
+}
+@media(max-width:500px) {
+    #testi , .testimonial .container{
+        min-height: 750px;
+        max-height: 750px;
+    }
+}
 @media(min-width:1800px) {
     #testi , .testimonial .container{
         width: 80% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 }
 @media(max-width:767px) {
@@ -2699,6 +2713,10 @@ a:focus {
 #testi .carousel-caption p i {
     color:#717161;
     /* padding: 1.4rem; */
+}
+
+.blog{
+    padding-top: 100px;
 }
 
 /* Index Page Testimonial Ends */
