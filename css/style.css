@@ -2720,3 +2720,18 @@ a:focus {
 }
 
 /* Index Page Testimonial Ends */
+
+.testimonial-text .btn{
+padding: 6px 10px;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 1px;
+color:white;
+background: #343148;
+border-radius: 0;
+transition: .3s;
+}
+
+.testimonial-text .btn:hover{
+    color:#FFDD66;
+}
