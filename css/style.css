@@ -519,9 +519,10 @@ a:focus {
 
 .about .about-img img {
     position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+    /* aspect-ratio: 1/1; */
+    object-fit:contain;
 }
 
 .about .about-text p {
@@ -546,10 +547,33 @@ a:focus {
     background: #FFDD66;
 }
 
+.about .about-text .btnContainer1{
+   height: 40px; 
+} 
+
+@media (min-width : 767.98px){
+    .about .about-img img{
+        height: 430px;
+        width: 430px;
+    }
+    .about .about-img {
+       padding-right: 40px;
+    }
+    .about .section-header{
+        padding-left: 40px;
+    }
+    .about .about-text{
+        padding-left: 40px;
+    }
+}
+
 @media (max-width: 767.98px) {
+    .about .about-img img{
+        height: 100%;
+        width: 100%;
+    }
     .about .about-img {
         margin-bottom: 30px;
-        height: auto;
     }
     .about .section-header{
         text-align: center;
