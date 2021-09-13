@@ -409,7 +409,7 @@
 
         
          <!-- Team Start -->
-         <div class="team">
+         <div class="team mt-5">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>Founder</p>
@@ -471,7 +471,7 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s">
+    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s" id="vol-say-testi">
         <div class="container d-flex justify-content-center align-items-center flex-column" id="testi">
             <div class="section-header text-center mt-5 wow fadeInUp">
                 <!-- <p>Testimonial</p> -->
@@ -713,10 +713,10 @@
 <script>
     if(window.innerWidth>=1800){
         document.getElementById('testi').classList.remove('container');
-        document.getElementsByClassName('testimonial')[0].classList.add('justify-content-center');
+        document.getElementById('vol-say-testi').classList.add('justify-content-center');
     }else{
         document.getElementById('testi').classList.add('container');
-        document.getElementsByClassName('testimonial')[0].classList.remove('justify-content-center');
+        document.getElementById('vol-say-testi').classList.remove('justify-content-center');
     }
 </script>
 </html>
