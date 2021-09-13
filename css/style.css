@@ -2588,23 +2588,21 @@ a:focus {
 
 
 
-#testi #demo {
-    margin: auto
+#vol-say-testi #testi #demo {
+    margin: auto !important;
 }
 
-#testi .carousel-caption {
-    position: initial;
-    z-index: 10;
-    /* padding: 5rem 8rem; */
-    padding: 0 8rem;
-    color: rgba(78, 77, 77, 0.856);
-    text-align: center;
-    font-size: 1.2rem;
-    /* line-height: 2rem */
+#vol-say-testi #testi .carousel-caption {
+    position: initial !important;
+    z-index: 10 !important;
+    padding: 0 8rem !important;
+    color: rgba(78, 77, 77, 0.856) !important;
+    text-align: center !important;
+    font-size: 1.2rem !important;
 }
 
 @media(max-width:767px) {
-    #testi .carousel-caption {
+    #vol-say-testi #testi .carousel-caption {
         position: initial;
         z-index: 10;
         padding: 3rem 2rem;
@@ -2616,14 +2614,14 @@ a:focus {
 
 
 /* Index Page Testimonial Starts */
-.testimonial{
+#vol-say-testi.testimonial{
     padding-bottom: 0 !important;
 }
-.testimonial.bg{
-    width: 100%;
-    margin-bottom: 35px;
+#vol-say-testi.testimonial.bg{
+    width: 100% !important;
+    margin-bottom: 35px !important;
 }
-.testimonial.bg::before{
+#vol-say-testi.testimonial.bg::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -2660,9 +2658,9 @@ a:focus {
 }
 
 @media(max-width:1800px) {
-    #testi , .testimonial .container{
-        min-height: 530px;
-        max-height: 530px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 530px !important;
+        max-height: 530px !important;
     }
 }
 @media(max-width:1000px) {
@@ -2744,3 +2742,18 @@ a:focus {
 }
 
 /* Index Page Testimonial Ends */
+
+.testimonial-text .btn{
+padding: 6px 10px;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 1px;
+color:white;
+background: #343148;
+border-radius: 0;
+transition: .3s;
+}
+
+.testimonial-text .btn:hover{
+    color:#FFDD66;
+}
