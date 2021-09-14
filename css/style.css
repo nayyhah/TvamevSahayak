@@ -2664,15 +2664,21 @@ a:focus {
     }
 }
 @media(max-width:1000px) {
-    #testi , .testimonial .container{
-        min-height: 650px;
-        max-height: 650px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 650px !important;
+        max-height: 650px !important;
     }
 }
 @media(max-width:500px) {
-    #testi , .testimonial .container{
-        min-height: 750px;
-        max-height: 750px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 750px !important;
+        max-height: 750px !important;
+    }
+}
+@media(max-width:400px) {
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 800px !important;
+        max-height: 800px !important;
     }
 }
 @media(min-width:1800px) {
