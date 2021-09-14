@@ -2589,16 +2589,16 @@ a:focus {
 
 
 #vol-say-testi #testi #demo {
-    margin: auto !important;
+    margin: auto ;
 }
 
 #vol-say-testi #testi .carousel-caption {
-    position: initial !important;
-    z-index: 10 !important;
-    padding: 0 8rem !important;
-    color: rgba(78, 77, 77, 0.856) !important;
-    text-align: center !important;
-    font-size: 1.2rem !important;
+    position: initial ;
+    z-index: 10 ;
+    padding: 0 8rem ;
+    color: rgba(78, 77, 77, 0.856) ;
+    text-align: center ;
+    font-size: 1.2rem ;
 }
 
 @media(max-width:767px) {
@@ -2633,7 +2633,7 @@ a:focus {
     background-size: cover;
     z-index: -2;
 }
-.testimonial.bg::after{
+#vol-say-testi.testimonial.bg::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -2642,10 +2642,10 @@ a:focus {
     backdrop-filter: blur(5px);
     z-index: -1;
 }
-#testi .section-header h2, #testi .section-header{
+#vol-say-testi #testi .section-header h2, #testi .section-header{
     transition: all 0.2s ease-in;
 }
-#testi .carousel-caption img {
+#vol-say-testi #testi .carousel-caption img {
     width: 6rem;
     border-radius: 5rem;
     /* margin-top: 2rem */
