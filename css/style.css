@@ -2233,44 +2233,69 @@ a:focus {
 /*******************************/
 /*********** Campaigns CSS **********/
 /*******************************/
-.pagination-c .pagination-arrow{
-    display: none;
+a{
+    color: #333;
+    text-decoration: none;
 }
-.pagination-c ul .page-item.disabled{
+  
+img {
+    width: 100%;
+}
+  
+.container .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #f5f4f4;
+    margin-bottom: 2rem;
+}
+
+.container .card .sub{
+    padding: 50px;
+}
+  
+.container .card h3 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+  
+.container .card img {
+    height: 400px;
+}
+
+  .container .card p {
+    text-align: justify;
+  }
+  
+  .container .card > div {
+    padding: 2rem;
+  }
+  
+  .container .card:nth-child(even) img {
+    order: 2;
+  }
+  
+  
+  .container .card .btn {
+    display: inline-block;
+    background:#343148;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  
+  .container .card .btn:hover {
     opacity: 0.8;
-    cursor: not-allowed;
-}
-.pagination-c ul .page-item .page-link{
-    background-color: #343148 !important;
-    border-color: #343148 !important;
-    color: #d8b843;
-    font-weight: bold;
-}
-.pagination-c ul .page-item.active .page-link, .pagination-c ul .page-item .page-link:hover{
-    background-color: #d8b843 !important;
-    border-color: #d8b843 !important;
-    color: #343148 !important;
-    font-weight: bold;
-}
-@media (max-width:584px){
-    .pagination-c .pagination.justify-content-center{
-        justify-content: space-between !important;
-        margin: 0 !important;
-        padding: 0!important;
+    color:rgb(255, 221, 102);
+  }
+  
+  @media(max-width:600px) {
+    .container .card {
+      display: block;
     }
-    .pagination-c .pagination-arrow{
-        display: inline;
-        font-size: 30px;
-        padding: 10px;
-    }
-    .pagination-c .pre-next{
-        display: none;
-    }
-    .pagination-c ul .page-item.number{
-        display: none;
-        font-size: 50px !important;
-    }
-}
+  }
+
 /* Pagination CSS Ends */
 
 /*campaigns section*/
