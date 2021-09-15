@@ -1310,16 +1310,6 @@ a:focus {
     border-radius: 8px;
 }
 
-@media screen and (min-width: 676px) {
-    .modal1 {
-        min-height : 600px; 
-    }
-     .modal-body>.image>img{
-        margin-top: 5.8rem;
-    } 
-}
-
-
 
 /*******************************/
 /******** Portfolio CSS ********/
