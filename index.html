@@ -124,22 +124,21 @@
         </div>
         <!-- Hero End -->
 
-
-    <!-- About Start -->
+           <!-- About Start -->
     <div class="about wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-5 col-md-6">
                     <div class="about-img">
-                        <img src="img/logo.png" alt="Image">
+                        <img class="img-fluid" src="img/logo.png" alt="Image">
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-6">
+                <div class="col-lg-7 col-md-6 ">
                     <div class="section-header">
                         <p>Learn About Us</p>
                         <h2>Welcome to Tvamev Sahayak</h2>
                     </div>
-                    <div class="about-text">
+                    <div class="about-text" >
                         <p>
                             <b>त्वमेव</b> is the hindi word for you and <b>सहायक</b> is Hindi for assistant/ helper. Together when
                             combined Tvamev Sahayak means You are a helper.
@@ -153,7 +152,7 @@
                             becoming their own and others' helpers.
                         </p>
                         <div class="btnContainer">
-                            <a class="btn" href="">Learn More</a>
+                            <a class="btn" href="./pages/about.html">Learn More</a>
                         </div>
                    </div>
                 </div>
@@ -368,9 +367,9 @@
                     <div class="testimonial-text">
                         <h3>KIZUTSUITA</h3>
                         <p>
-                            For Kizutsuita, write "Kizutsuita, english for wounded, was an "ART Competition" about the theme of trauma. 
+                            Kizutsuita, english for wounded, was an "ART Competition" about the theme of trauma. 
                             Participants were asked to draw, paint, or even make a reel about anything trauma related.
-                             Then...                        
+                            Then...                        
                               </p>
                               <a class="btn" href="pages/blogs/blog1.html">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
@@ -384,7 +383,19 @@
                         <p>
                             Dhaaga was our first project, which was a short interview series about toxic positivity. 
                             People were asked questions and were requested to answer them.
-                             The questions, about the topic ranging from if toxic...</p>
+                            The questions, about the topic ranging from if toxic...</p>
+                        <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/we-fight-togother.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <h3>PEHCHAAN</h3>
+                        <p>
+                            Pehchaan was a webinar that our team conducted on the topic gender and sexuality. 
+                            The webinar speaker was Ms Manavi Khurana, who specializes in counselling for LGBTQ+ people.</p>
                         <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -395,7 +406,7 @@
                     <div class="testimonial-text">
                         <h3>ALFAAZ</h3>
                         <p>
-                            Alfaaz'21: An open mic fundraiser towards the cause of Suicide Prevention. 
+                            Alfaaz'21 was an open mic fundraiser towards the cause of Suicide Prevention. 
                             September 10th is observed as World Suicide Prevention Day and this day reminds us that we must make efforts to prevent...                       </p>
                         <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
                     </div>
@@ -410,7 +421,7 @@
 
         
          <!-- Team Start -->
-         <div class="team">
+         <div class="team mt-5">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>Founder</p>
@@ -472,7 +483,7 @@
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s">
+    <div class="testimonial wow fadeInUp bg d-flex " data-wow-delay="0.1s" id="vol-say-testi">
         <div class="container d-flex justify-content-center align-items-center flex-column" id="testi">
             <div class="section-header text-center mt-5 wow fadeInUp">
                 <!-- <p>Testimonial</p> -->
@@ -577,7 +588,7 @@
             <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="img/img1.jpeg" alt="Blog">
+                        <img src="img/blogs/6.png" alt="Blog">
                     </div>
                     <div class="blog-text">
                         <h2>Mental health and importance of reading and writing</h2>
@@ -714,10 +725,10 @@
 <script>
     if(window.innerWidth>=1800){
         document.getElementById('testi').classList.remove('container');
-        document.getElementsByClassName('testimonial')[0].classList.add('justify-content-center');
+        document.getElementById('vol-say-testi').classList.add('justify-content-center');
     }else{
         document.getElementById('testi').classList.add('container');
-        document.getElementsByClassName('testimonial')[0].classList.remove('justify-content-center');
+        document.getElementById('vol-say-testi').classList.remove('justify-content-center');
     }
 </script>
 </html>

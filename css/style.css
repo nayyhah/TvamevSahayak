@@ -519,9 +519,10 @@ a:focus {
 
 .about .about-img img {
     position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+    /* aspect-ratio: 1/1; */
+    object-fit:contain;
 }
 
 .about .about-text p {
@@ -546,10 +547,33 @@ a:focus {
     background: #FFDD66;
 }
 
+.about .about-text .btnContainer1{
+   height: 40px; 
+} 
+
+@media (min-width : 767.98px){
+    .about .about-img img{
+        height: 430px;
+        width: 430px;
+    }
+    .about .about-img {
+       padding-right: 40px;
+    }
+    .about .section-header{
+        padding-left: 40px;
+    }
+    .about .about-text{
+        padding-left: 40px;
+    }
+}
+
 @media (max-width: 767.98px) {
+    .about .about-img img{
+        height: 100%;
+        width: 100%;
+    }
     .about .about-img {
         margin-bottom: 30px;
-        height: auto;
     }
     .about .section-header{
         text-align: center;
@@ -2564,23 +2588,21 @@ a:focus {
 
 
 
-#testi #demo {
-    margin: auto
+#vol-say-testi #testi #demo {
+    margin: auto ;
 }
 
-#testi .carousel-caption {
-    position: initial;
-    z-index: 10;
-    /* padding: 5rem 8rem; */
-    padding: 0 8rem;
-    color: rgba(78, 77, 77, 0.856);
-    text-align: center;
-    font-size: 1.2rem;
-    /* line-height: 2rem */
+#vol-say-testi #testi .carousel-caption {
+    position: initial ;
+    z-index: 10 ;
+    padding: 0 8rem ;
+    color: rgba(78, 77, 77, 0.856) ;
+    text-align: center ;
+    font-size: 1.2rem ;
 }
 
 @media(max-width:767px) {
-    #testi .carousel-caption {
+    #vol-say-testi #testi .carousel-caption {
         position: initial;
         z-index: 10;
         padding: 3rem 2rem;
@@ -2592,14 +2614,14 @@ a:focus {
 
 
 /* Index Page Testimonial Starts */
-.testimonial{
+#vol-say-testi.testimonial{
     padding-bottom: 0 !important;
 }
-.testimonial.bg{
-    width: 100%;
-    margin-bottom: 35px;
+#vol-say-testi.testimonial.bg{
+    width: 100% !important;
+    margin-bottom: 35px !important;
 }
-.testimonial.bg::before{
+#vol-say-testi.testimonial.bg::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -2611,7 +2633,7 @@ a:focus {
     background-size: cover;
     z-index: -2;
 }
-.testimonial.bg::after{
+#vol-say-testi.testimonial.bg::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -2620,10 +2642,10 @@ a:focus {
     backdrop-filter: blur(5px);
     z-index: -1;
 }
-#testi .section-header h2, #testi .section-header{
+#vol-say-testi #testi .section-header h2, #testi .section-header{
     transition: all 0.2s ease-in;
 }
-#testi .carousel-caption img {
+#vol-say-testi #testi .carousel-caption img {
     width: 6rem;
     border-radius: 5rem;
     /* margin-top: 2rem */
@@ -2636,21 +2658,27 @@ a:focus {
 }
 
 @media(max-width:1800px) {
-    #testi , .testimonial .container{
-        min-height: 530px;
-        max-height: 530px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 530px !important;
+        max-height: 530px !important;
     }
 }
 @media(max-width:1000px) {
-    #testi , .testimonial .container{
-        min-height: 650px;
-        max-height: 650px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 650px !important;
+        max-height: 650px !important;
     }
 }
 @media(max-width:500px) {
-    #testi , .testimonial .container{
-        min-height: 750px;
-        max-height: 750px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 750px !important;
+        max-height: 750px !important;
+    }
+}
+@media(max-width:400px) {
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 800px !important;
+        max-height: 800px !important;
     }
 }
 @media(min-width:1800px) {
