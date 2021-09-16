@@ -1290,6 +1290,12 @@ a:focus {
         margin: auto;
     }
 }
+@media screen and (max-width: 586px) {
+    .data .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 .campaign{
     display: flex;
@@ -1309,16 +1315,6 @@ a:focus {
     -moz-backface-visibility: hidden;
     border-radius: 8px;
 }
-
-@media screen and (min-width: 676px) {
-    .modal1 {
-        min-height : 600px; 
-    }
-     .modal-body>.image>img{
-        margin-top: 5.8rem;
-    } 
-}
-
 
 
 /*******************************/
