@@ -42,7 +42,7 @@
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 2rem;
-          background: #f1f1f1;
+          background: rgba(255, 255, 255, 0.5);
           margin-bottom: 2rem;
         }
         
@@ -63,19 +63,7 @@
           order: 2;
         }
         
-        
-        .btn {
-          display: inline-block;
-          background: #000;
-          color: #fff;
-          padding: 0.8rem 1.8rem;
-          margin-top: 2rem;
-          cursor: pointer;
-        }
-        
-        .btn:hover {
-          opacity: 0.8;
-        }
+
         
         @media(max-width:600px) {
           .card {
@@ -83,3 +71,30 @@
           }
         }
         
+.headcl{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headcl1{
+  color: black;
+  font-family:inherit;
+}
+.btnContainer1{
+  height: 40px; 
+} 
+.btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #FFDD66;
+  background: #343148;
+  border-radius: 0;
+  transition: .3s;
+  border-radius: 30px;
+  margin-top: 40px;
+
+}
+.btn:hover{
+  background-color: #e2d192;
+  color: black;
+}
