@@ -1262,11 +1262,13 @@ a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .data>.content>.blog_author>img{
-   height: 238px;
-   width: 260px;
-   border-radius: 6px;
+   height: 270px; 
+   width:100%; 
+   object-fit: contain;
+   
 }
 .data>.content>.blog_author>p{
     color: rgb(78, 73, 73);
@@ -1316,6 +1318,16 @@ a:focus {
     border-radius: 8px;
 }
 
+
+@media screen and (min-width: 676px) {
+    .modal1 {
+        min-height : 600px; 
+    }
+    .modal-body>.image>img{
+        margin-top: 5.8rem;
+        padding-top: -20px;
+    } 
+}
 
 /*******************************/
 /******** Portfolio CSS ********/
