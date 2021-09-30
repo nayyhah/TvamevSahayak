@@ -185,3 +185,24 @@ small:after {
 .flickity-prev-next-button .flickity-button-icon{
   left: 0% !important;
 }
+
+
+@media (max-width:809px) {
+  .is-item.has--img{
+    display: none;
+  }
+  .is-item--inner{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .flickity-button.flickity-prev-next-button.previous{
+    left: 0% !important;
+  }
+  .flickity-prev-next-button{
+    /* margin-top: 50px; */
+    top:100% !important;
+    transform: translateY(-100%) !important;
+  }
+}
