@@ -23,6 +23,7 @@ small {
   color: #999;
   position: relative;
   padding-left: 3em;
+  font-size: 1rem !important;
 }
 small:after {
   content: "";
@@ -172,4 +173,15 @@ small:after {
   .contact-form.w-50{
     width: 100% !important;
   }
+}
+
+.flickity-button.flickity-prev-next-button.previous{
+  left: 90% !important;
+}
+.flickity-prev-next-button{
+  top:100% !important;
+  transform: translateY(-100%) !important;
+}
+.flickity-prev-next-button .flickity-button-icon{
+  left: 0% !important;
 }
