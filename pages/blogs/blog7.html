@@ -29,10 +29,46 @@
 
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
+
+    <style>
+
+.wrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+IMG {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+IMG:nth-child(7n+1) {
+  grid-column: 2/span 2;
+}
+IMG:hover {
+  z-index: 2;
+  transform: scale(2);
+}
+    </style>
+
+
 </head>
 
-<>
-     <!-- Top Bar Start -->
+<body>
+    <!-- Top Bar Start -->
     <div class="top-bar d-none d-md-block">
         <div class="container-fluid">
             <div class="row">
@@ -88,12 +124,13 @@
     </div>
     <!-- Nav Bar End -->
 
+
         <!-- Page Header Start -->
         <div class="page-header">
             <div class="container">
                 <div class="row">
                     <div class="col-12 wow zoomIn" data-wow-delay="0.1s">
-                        <h2>Mental health and importance of reading and writing</h2>
+                        <h2><b>PEHCHAAN</b></h2>
                         <a class="btn" href="../blog.html">More blogs <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
@@ -102,61 +139,58 @@
         <!-- Page Header End -->
 
 
+
         <div class="data ">
             <div class="content container wow zoomIn" data-wow-delay="0.1s">
             <!-- <h2>MENTAL HEALTH AND WELL BEING</h2><br> -->
             <div class="blog_author">
-                <img src="../../img/blogs/6.png" alt="Blog">
-                <p class="text-center mt-2">Art by - <b>Abhishek</b></p>
+                <!-- <img src="../../img/blogs/4blog.png" alt="Blog"> -->
+                <!-- <p class="text-center mt-2">Art by - <b>Harshita Gupta</b></p> -->
+
+
+
+
+
             </div>
             <p>
-                <p> <span style="font-size: 30px">I</span>n our mundane lives, we often forget to devote little time for ourselves- to think introspect and rectify ourselves.
-                    Dismissal of our own emotional needs can have disruptive consequences on our mental health.
-                    The gnawing agony will mentally drain us.
-                </p>
-                
-                <p>Reading and writing can be one’s <b>trustworthy</b> companions which can help one to <b>rejuvenate oneself. </b>
-                    Once you devour yourself into the book, you will discover unique horizon; which is not limited to the characters or the narration,
-                    but includes desires, hope, anguish, grief, joy of the protagonists and the antagonists as well as the supporting characters. 
-                    You can find relatable circumstances and you can refine yourself through the process of reading. 
-                </p>
-    
-                <p>
-                    Reading fertilizes your intellectual development and compliments your individuality. 
-                    Whenever our psychological peace is distorted due to any reason, <b>writing</b> can be the <b>savior.</b>
-                    The outrage you frugally try to keep obscured can be expressed by penning down your thoughts and emotions. 
-                    Writing offers a non- judgmental platform; you can pour your heat out through beautifully crafted words and sentences. 
-                    Reading and writing can immensely contribute towards <b>restoring</b> your<b> mental health</b>;
-                    it just requires a little bit of interest and effort to establish the everlasting and secured bond between mental health and reading and writing. 
-                    Then you can find a way of saving yourself from the abyss of darkness and pain and channelize them to create a<b> positive energy</b> to <b>live</b>, <b>love</b> and<b> explore.</b>
-                </p>
+                <span style="font-size: 30px">P</span>ehchaan was a 1 hour webinar that our team conducted on the topic gender and sexuality. The webinar speaker was Ms Manavi Khurana, who specializes in counselling for LGBTQ+ people. 
+                Dr Manavi Khurana did her bachelors in psychology, women's studies and education, and masters in applied psychology. She specializes in LGBTQIA+ mental health and sexuality related issues. LGBTQIA+ community faces a lot of discrimination in the modern world. There is an utmost need to educate the society on the gender and sexuality spectrum and let everyone know that it is okay to love people irrespective of what they identify as. To spread awareness about this exact issue is why we conducted this 1 hour webinar.
             </p>
-            <div class="author ">
-                <p class="d-flex justify-content-end"><b>Author</b></p>
-                <p class="d-flex justify-content-end" style="font-family: 'Dancing Script', cursive; margin-top: -15px;font-size: 20px;">Sampreeti</p>
-            </div>
+            <p>
+                <div class="wrapper">
+                    <img src="https://source.unsplash.com/random/600x600?water" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?summer" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?plants" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?snow" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?roses" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?sky" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?nature" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?blossom" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?ice" alt="">
+                    <img src="https://source.unsplash.com/random/600x600?spring" alt="">
+                  </div>
+            </p>
+            <!-- <div class="author ">
+                <p class= "d-flex justify-content-end"><b>Author</b></p>
+                <p class= "d-flex justify-content-end" style="font-family: 'Dancing Script', cursive; margin-top: -15px;font-size: 20px;">Arzash</p>
+            </div> -->
             <div class="pagination-c">
                 <nav aria-label="Page navigation">
                     <ul class="pagination justify-content-center mt-5 pt-2">
-                        <li class="page-item mx-1"><a class="page-link" href="blog4.html"><i class="fa fa-angle-left pagination-arrow"></i><span class="pre-next">Previous</span></a></li>
+                        <li class="page-item mx-1"><a class="page-link" href="blog6.html"><i class="fa fa-angle-left pagination-arrow"></i><span class="pre-next">Previous</span></a></li>
                         <li class="page-item mx-1 number"><a class="page-link " href="blog1.html">1</a></li>
                         <li class="page-item mx-1 number"><a class="page-link" href="blog2.html">2</a></li>
                         <li class="page-item mx-1 number"><a class="page-link" href="blog3.html">3</a></li>
                         <li class="page-item mx-1 number"><a class="page-link" href="blog4.html">4</a></li>
-                        <li class="page-item mx-1 number active"><a class="page-link" href="blog5.html">5</a></li>
+                        <li class="page-item mx-1 number"><a class="page-link" href="blog5.html">5</a></li>
                         <li class="page-item mx-1 number"><a class="page-link" href="blog6.html">6</a></li>
-                        <li class="page-item mx-1 number"><a class="page-link" href="blog7.html">7</a></li>
-                        <li class="page-item mx-1"><a class="page-link" href="blog6.html"><span class="pre-next">Next</span><i class="fa fa-angle-right pagination-arrow"></i></a></li>
+                        <li class="page-item mx-1 number active"><a class="page-link" href="blog7.html">7</a></li>
+                        <li class="page-item mx-1 disabled"><a class="page-link" href="#"><span class="pre-next">Next</span><i class="fa fa-angle-right pagination-arrow"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         </div>
-
-
-       
-
-
 
         <!-- Footer Start -->
      <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -191,7 +225,7 @@
         </div>
     </div>
     <!-- Footer End -->
-    
+         
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     
         <!-- JavaScript Libraries -->
