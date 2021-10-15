@@ -27,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #FFDD66;
+    color: #ffde66fa;
     outline: none;
     text-decoration: none;
 }
@@ -1292,6 +1292,12 @@ a:focus {
         margin: auto;
     }
 }
+@media screen and (max-width: 586px) {
+    .data .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 .campaign{
     display: flex;
@@ -1312,17 +1318,13 @@ a:focus {
     border-radius: 8px;
 }
 
+
 @media screen and (min-width: 676px) {
-    .modal1 {
-        min-height : 600px; 
-    }
+   
     .modal-body>.image>img{
-        margin-top: 5.8rem;
         padding-top: -20px;
     } 
 }
-
-
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -2667,15 +2669,21 @@ a:focus {
     }
 }
 @media(max-width:1000px) {
-    #testi , .testimonial .container{
-        min-height: 650px;
-        max-height: 650px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 650px !important;
+        max-height: 650px !important;
     }
 }
 @media(max-width:500px) {
-    #testi , .testimonial .container{
-        min-height: 750px;
-        max-height: 750px;
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 750px !important;
+        max-height: 750px !important;
+    }
+}
+@media(max-width:400px) {
+    #testi , #vol-say-testi.testimonial .container{
+        min-height: 800px !important;
+        max-height: 800px !important;
     }
 }
 @media(min-width:1800px) {
