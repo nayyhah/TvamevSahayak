@@ -1320,11 +1320,8 @@ a:focus {
 
 
 @media screen and (min-width: 676px) {
-    .modal1 {
-        min-height : 600px; 
-    }
+   
     .modal-body>.image>img{
-        margin-top: 5.8rem;
         padding-top: -20px;
     } 
 }
