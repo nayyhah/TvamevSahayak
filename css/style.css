@@ -2768,3 +2768,16 @@ transition: .3s;
 .testimonial-text .btn:hover{
     color:#FFDD66;
 }
+
+
+
+
+/* Header Logo */
+.header-logo img{
+    content: url(../img/logodark.png);
+    min-height: 50px !important;
+}
+.nav-sticky .header-logo img{
+    content: url(../img/logolight.png);
+    min-height: 50px !important;
+}
