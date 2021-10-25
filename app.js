@@ -1,6 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
+const port = 3000
+
 
 
 app.use(bodyParser.json());
@@ -15,7 +17,7 @@ res.set({
 	'Access-control-Allow-Origin': '*'
 	});
 return res.redirect('public/index.html');
-}).listen(3000)
+}).listen(port)
 
 
-console.log(`Server running at http://localhost:3000`);
+console.log(`Listening on port ${port}`);
