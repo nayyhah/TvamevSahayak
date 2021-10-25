@@ -2774,10 +2774,10 @@ transition: .3s;
 
 /* Header Logo */
 .header-logo img{
-    content: url(../img/logodark.png);
+    /* content: url(../img/logodark.png); */
     min-height: 50px !important;
 }
 .nav-sticky .header-logo img{
-    content: url(../img/logolight.png);
+    /* content: url(../img/logolight.png); */
     min-height: 50px !important;
 }

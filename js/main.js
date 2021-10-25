@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+    const hl=document.getElementById('header-logo')
     // Initiate the wowjs
     new WOW().init();
     
@@ -23,8 +23,12 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
+            hl.src="../img/logolight.png"
+    
         } else {
             $('.navbar').removeClass('nav-sticky');
+            hl.src="../img/logodark.png"
+    
         }
     });
     
