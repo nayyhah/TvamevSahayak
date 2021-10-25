@@ -1,7 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
-const port = 3000
+const port = process.env.PORT || 3000
 
 
 
@@ -17,7 +17,7 @@ res.set({
 	'Access-control-Allow-Origin': '*'
 	});
 return res.redirect('public/index.html');
-}).listen(port)
+}).listen(process.env.PORT || 5000)
 
 
 console.log(`Listening on port ${port}`);
