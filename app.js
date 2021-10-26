@@ -17,7 +17,7 @@ res.set({
 	'Access-control-Allow-Origin': '*'
 	});
 return res.redirect('public/index.html');
-}).listen(process.env.PORT || 5000)
+}).listen(process.env.PORT || 3000)
 
 
 console.log(`Listening on port ${port}`);

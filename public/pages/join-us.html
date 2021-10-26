@@ -30,7 +30,11 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/join-us.css" rel="stylesheet">
 
-
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
     
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet"><link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'><link rel="stylesheet" href="./style.css">
 </head>
@@ -73,7 +77,10 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand">L<span>og</span>O</a>
+            <!-- <a href="../index.html" class="navbar-brand">L<span>og</span>O</a> -->
+            <a href="index.html" class="navbar-brand header-logo">
+                <img id="header-logo" src="../img/logodark.png" >
+           </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -101,9 +108,9 @@
                 <div class="col-12">
                     <h2>Join Us</h2>
                 </div>
-                <div class="col-12" style="text-decoration: none;">
-                    <a href="../index.html">Home</a>
-                    <a href="../pages/join-us.html">Join Us</a>
+                <div class="col-12">
+                    <a href="../index.html" style="text-decoration: none;">Home</a>
+                    <a href="../pages/join-us.html" style="text-decoration: none;">Join Us</a>
                 </div>
             </div>
         </div>
@@ -275,18 +282,32 @@
                             <div class="control-group">
                                 <input type="text" class="form-control" id="Whatsapp" placeholder="Whatsapp Number"
                                     required="required"
-                                    data-validation-required-message="Please enter a Whatsapp Number" />
+                                    data-validation-required-message="Please enter your Whatsapp Number" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <select class="w-100">
-                                    <option disabled selected>Select Team</option>
-                                    <option value="1">Project Management</option>
-                                    <option value="2">Media and Communication</option>
-                                    <option value="3">Content Writing</option>
-                                    <option value="3">Design and Artwork</option>
-                                    <option value="3">Web Development</option>
+                                <input type="number" class="form-control" id="age" placeholder="Your Age"
+                                    required="required" data-validation-required-message="Please enter your age." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <select class="w-100" placeholder="Your Age">
+                                    <option disabled selected>How much time are you ready to dedicate to the organisation?</option>
+                                    <option value="1">8-9 hours per week</option>
+                                    <option value="2">7-6 hours per week</option>
+                                    <option value="3">5-4 hours per week</option>
+                                    <option value="4">less than 2 hours</option>
                                 </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="reason" placeholder="Why do you want to join? "
+                                    required="required" data-validation-required-message="Please tell us that why you want to join." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="contibution" placeholder="How will you contribute to the organisation?"
+                                    required="required" data-validation-required-message="Please tell us how you will contribute to the organisation." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
