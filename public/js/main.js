@@ -1,21 +1,18 @@
 (function ($) {
-    const hl=document.getElementById('header-logo')
+    const hDark=document.getElementById('header-logo-dark')
+    const hLight=document.getElementById('header-logo-light')
+    const hDarkDiv=document.getElementById('header-dark')
+    const hLightDiv=document.getElementById('header-light')
+
     window.onload=function(){
         if (window.innerWidth<992){
-            fetch('../img/logodark.png', { method: 'HEAD' })
-            .then(res => {
-                if (res.ok) {
-                    hl.src="../img/logolight.png"
-                } else {
-                    hl.src="../../img/logolight.png"
-                }
-            }).catch();
+            hDarkDiv.classList.add('hide-header-logo')
+            hLightDiv.classList.remove('hide-header-logo')
         }
     }
     "use strict";
     // Initiate the wowjs
     new WOW().init();
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -36,28 +33,15 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
-            if (window.innerWidth>991){
-                fetch('../img/logolight.png', { method: 'HEAD' })
-                .then(res => {
-                    if (res.ok) {
-                        hl.src="../img/logolight.png"
-                    } else {
-                        hl.src="../../img/logolight.png"
-                    }
-                }).catch();
+            if (window.innerWidth>991){    
+                hDarkDiv.classList.add('hide-header-logo')
+                hLightDiv.classList.remove('hide-header-logo')
             }
         } else {
             $('.navbar').removeClass('nav-sticky');
             if (window.innerWidth>991){
-                console.log('ok')
-                fetch('../img/logolight.png', { method: 'HEAD' })
-                .then(res => {
-                    if (res.ok) {
-                        hl.src="../img/logodark.png"
-                    } else {
-                        hl.src="../../img/logodark.png"
-                    }
-                }).catch();
+                hDarkDiv.classList.remove('hide-header-logo')
+                hLightDiv.classList.add('hide-header-logo')
             }
         }
     });

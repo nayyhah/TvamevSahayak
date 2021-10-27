@@ -2787,3 +2787,9 @@
     
     
     
+
+
+
+    .header-logo .hide-header-logo{
+        display: none;
+    }
