@@ -26,8 +26,8 @@ app.post('/joinus', (req,res)=>{
     var transporter = nodemailer.createTransport({
      service: 'gmail',
      auth: {
-       user: 'tvamevsahayak@gmail.com',
-       pass: '09081965@'
+       user: 'tvamevsahayakform@gmail.com',
+       pass: 'tvamevsahayak'
      }
    });
    
