@@ -32,10 +32,12 @@ app.post('/joinus', (req,res)=>{
    });
    
    var mailOptions = {
-     from: 'njha7189@gmail.com',
-     to: Email,
-     subject: 'Sending Email using Node.js',
-     text: `Hii, I am ${Name}, ${Age} year old wanted to join TVAMEV SHAYAK. I will be working with full commitment to 
+     from: 'tvamevsahayakform@gmail.com',
+     to: 'njha7189@gmail.com',
+     subject: 'Tvamev Sahayak Joining Form New Response',
+     text: `Name : ${Name}, 
+	        Age : ${Age} 
+			
                 the organisation. I will work ${TimeCommitment} months. I want to join because ${WhyDoYouWantToJoin}.
                 I will contribute to organisation as ${HowWillYouContributeToTheOrganisation}.
                 WhatsApp No : ${WhatsappNo}  `

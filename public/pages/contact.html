@@ -93,11 +93,12 @@
                     <a href="../pages/campaign.html" class="nav-item nav-link">Campaign</a>
                     <a href="../pages/blog.html" class="nav-item nav-link">Blog</a>
                     <a href="../pages/donate.html" class="nav-item nav-link">Donate</a>
-                    <a href="../pages/contact.html" class="nav-item nav-link">Join Us</a>
+                    <a href="../pages/contact.html" class="nav-item nav-link active">Join Us</a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Nav Bar End -->
 
 
@@ -118,14 +119,54 @@
     <!-- Page Header End -->
 
 
+    <div class="about wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img">
+                        <img src="../img/logo.png" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 ">
+                    <div class="section-header">
+                        <p>Join Us</p>
+                        <h2>How can you contribute!</h2>
+                    </div>
+                    <div class="about-text" >
+                        <p  style="font-size:20px">
+                            We at <b>Tvamev Sahayak</b> require people for running various projects that we will execute. For that, we will be 
+                            needing content writers, graphic designers, people for media and communication, and people 
+                            for design and artwork. 
+                        </p>
+
+                        <p  style="font-size:20px">
+                            This is a volunteering opportunity. We recommend you to stay for as long 
+                            as you can and be genuine in your work and in your behaviour. All volunteers will be going 
+                            through an interview process before being selected as a <i>Sahayak</i>.
+                        </p>
+                        <div class="btnContainer1">  
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p><b>Move a step forward!</b></p>
+                <h2>Sahayak-Form</h2>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Contact Start -->
     <div class="joinUsPage">
+        
         <div class="container JoinUsContainer mx-auto col-md-6 col-sm-8  ">
-
-            <div class="container d-flex justify-content-center">
-                <h2 style="font-weight: 600; color: white;" >Join Form</h2>
-            </div>
-
 
             <form method="POST" action="/joinus" autocomplete="off" name="google-sheet">
 
@@ -153,12 +194,10 @@
                     <label for="time" style="font-weight: 500; color: white;" >How much time are you ready to dedicate to the organisation (months)</label>
                     <select class="custom-select mr-sm-2 bg-dark" style="color: white;" name="TimeCommitment" id="time">
                         <option selected>Choose...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="2">6</option>
-                        <option value="3">12</option>
-
+                        <option value="1">8-9 hours per week</option>
+                        <option value="2">7-6 hours per week</option>
+                        <option value="3">5-4 hours per week</option>
+                        <option value="4">Less than 2 hours</option>
                       </select>
                     <!-- <input style="color: white;" type="number" name="TimeCommitment" class="form-control bg-dark" id="time"  value="" required="true"/> -->
                 </div>
@@ -172,6 +211,7 @@
                     <label for="HowWillYouContributeToTheOrganisation" style="font-weight: 500; color: white;" >How will you contribute to the organisation</label>
                     <input style="color: white;" type="text" name="HowWillYouContributeToTheOrganisation " class="form-control bg-dark inputbox" id="HowWillYouContributeToTheOrganisation"  value="" required=""/>
                 </div>
+                <br>
         
                 <div class="form-group">
                     <input type="submit" name="submit" class="btnSubmit btn-block btn-outline-primary" value="Send" />
@@ -238,18 +278,7 @@
     <script>
         includeHTML();
     </script>
-<script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
 
 </body>
-<script>
-    var slideEl = $(".slide--parent");
 
-slideEl.flickity({
-	imagesLoaded: true,
-	wrapAround: true,
-	autoPlay: true,
-	pauseAutoPlayOnHover: false
-});
-
-</script>
 </html>
