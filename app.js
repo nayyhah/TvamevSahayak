@@ -38,10 +38,10 @@ app.post('/joinus', (req,res)=>{
      text: `
             Name : ${Name}, 
 	          Age : ${Age},
-            Email : ${Email}
-            WhatsApp No : ${WhatsappNo}
-            How much time are you ready to dedicate to the organisation : ${TimeCommitment}
-            Why do you want to join? : ${WhyDoYouWantToJoin}
+            Email : ${Email},
+            WhatsApp No : ${WhatsappNo},
+            How much time are you ready to dedicate to the organisation : ${TimeCommitment},
+            Why do you want to join? : ${WhyDoYouWantToJoin},
             How will you contribute to the organisation? : ${HowWillYouContributeToTheOrganisation}
 
             `
