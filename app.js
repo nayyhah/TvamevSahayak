@@ -47,13 +47,16 @@ app.post('/joinus', (req,res)=>{
             `
    };
    
-   transporter.sendMail(mailOptions, (error, info)=>{
-     if (error) {
-       console.log(error);
-     } else {
-       console.log('Email sent: ' + info.response);
-     }
-   });
+  //  transporter.sendMail(mailOptions, (error, info)=>{
+  //    if (error) {
+  //      console.log(error);
+  //    } else {
+  //      console.log('Email sent: ' + info.response);
+  //    }
+  //  });
+
+     console.log(mailOptions.text);
+   
    res.redirect('/');
    
  })
