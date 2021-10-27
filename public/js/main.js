@@ -1,6 +1,18 @@
 (function ($) {
-    "use strict";
     const hl=document.getElementById('header-logo')
+    window.onload=function(){
+        if (window.innerWidth<992){
+            fetch('../img/logodark.png', { method: 'HEAD' })
+            .then(res => {
+                if (res.ok) {
+                    hl.src="../img/logolight.png"
+                } else {
+                    hl.src="../../img/logolight.png"
+                }
+            }).catch();
+        }
+    }
+    "use strict";
     // Initiate the wowjs
     new WOW().init();
     
@@ -19,32 +31,37 @@
     });
     
     
+    
         // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
-            fetch('../img/logolight.png', { method: 'HEAD' })
-            .then(res => {
-                if (res.ok) {
-                    hl.src="../img/logolight.png"
-                } else {
-                    hl.src="../../img/logolight.png"
-                }
-            }).catch();
-            
+            if (window.innerWidth>991){
+                fetch('../img/logolight.png', { method: 'HEAD' })
+                .then(res => {
+                    if (res.ok) {
+                        hl.src="../img/logolight.png"
+                    } else {
+                        hl.src="../../img/logolight.png"
+                    }
+                }).catch();
+            }
         } else {
             $('.navbar').removeClass('nav-sticky');
-            fetch('../img/logolight.png', { method: 'HEAD' })
-            .then(res => {
-                if (res.ok) {
-                    hl.src="../img/logodark.png"
-                } else {
-                    hl.src="../../img/logodark.png"
-                }
-            }).catch();
-            
+            if (window.innerWidth>991){
+                console.log('ok')
+                fetch('../img/logolight.png', { method: 'HEAD' })
+                .then(res => {
+                    if (res.ok) {
+                        hl.src="../img/logodark.png"
+                    } else {
+                        hl.src="../../img/logodark.png"
+                    }
+                }).catch();
+            }
         }
     });
+    
     
     
     // Dropdown on mouse hover
