@@ -19,16 +19,30 @@
     });
     
     
-    // Sticky Navbar
+        // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
-            hl.src="../img/logolight.png"
-    
+            fetch('../img/logolight.png', { method: 'HEAD' })
+            .then(res => {
+                if (res.ok) {
+                    hl.src="../img/logolight.png"
+                } else {
+                    hl.src="../../img/logolight.png"
+                }
+            }).catch();
+            
         } else {
             $('.navbar').removeClass('nav-sticky');
-            hl.src="../img/logodark.png"
-    
+            fetch('../img/logolight.png', { method: 'HEAD' })
+            .then(res => {
+                if (res.ok) {
+                    hl.src="../img/logodark.png"
+                } else {
+                    hl.src="../../img/logodark.png"
+                }
+            }).catch();
+            
         }
     });
     
