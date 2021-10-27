@@ -35,12 +35,16 @@ app.post('/joinus', (req,res)=>{
      from: 'tvamevsahayakform@gmail.com',
      to: 'njha7189@gmail.com',
      subject: 'Tvamev Sahayak Joining Form New Response',
-     text: `Name : ${Name}, 
-	        Age : ${Age} 
-			
-                the organisation. I will work ${TimeCommitment} months. I want to join because ${WhyDoYouWantToJoin}.
-                I will contribute to organisation as ${HowWillYouContributeToTheOrganisation}.
-                WhatsApp No : ${WhatsappNo}  `
+     text: `
+            Name : ${Name}, 
+	          Age : ${Age},
+            Email : ${Email}
+            WhatsApp No : ${WhatsappNo}
+            How much time are you ready to dedicate to the organisation : ${TimeCommitment}
+            Why do you want to join? : ${WhyDoYouWantToJoin}
+            How will you contribute to the organisation? : ${HowWillYouContributeToTheOrganisation}
+
+            `
    };
    
    transporter.sendMail(mailOptions, (error, info)=>{
