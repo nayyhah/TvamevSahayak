@@ -171,35 +171,37 @@
             <form method="POST" action="/joinus" autocomplete="off" name="google-sheet">
 
                 <div class="form-group mt-2">
-                    <label for="Name" style="font-weight: 500; color: white;" >Name</label>
-                    <input style="color: white;"   type="text" name="Name" class="form-control bg-dark inputbox " id="Name"  value="" required="true"/>
+                    <label for="Name" style="font-weight: 500;" >Name</label>
+                    <input    type="text" name="Name" class="form-control  inputbox " id="Name"  value="" required="true"/>
                 </div>
         
                 <div class="form-group">
-                    <label for="Email" style="font-weight: 500; color: white;" >Email</label>
-                    <input style="color: white;" type="text" name="Email" class="form-control bg-dark inputbox" id="Email"  value="" required="true"/>
+                    <label for="Email" style="font-weight: 500; " >Email</label>
+                    <input  type="text" name="Email" class="form-control  inputbox" id="Email"  value="" required="true"/>
                 </div>
         
                 <div class="form-group">
-                    <label for="Age" style="font-weight: 500; color: white;" >Age</label>
-                    <input style="color: white;"  type="number" name="Age" class="form-control bg-dark inputbox" id="Age"  value="" required="true"/>
+                    <label for="Age" style="font-weight: 500; " >Age</label>
+                    <input   type="number" name="Age" class="form-control  inputbox" id="Age"  value="" required="true"/>
                 </div>
         
                 <div class="form-group">
-                    <label for="Whatsapp" style="font-weight: 500; color: white;" >Whatsapp No</label>
-                    <input style="color: white;" type="number" name="WhatsappNo" class="form-control bg-dark inputbox" id="Whatsapp"  value="" required="true"/>
+                    <label for="Whatsapp" style="font-weight: 500; " >Whatsapp No</label>
+                    <input  type="number" name="WhatsappNo" class="form-control  inputbox" id="Whatsapp"  value="" required="true"/>
                 </div>
                 
                 <div class="form-group">
                     <label for="time" style="font-weight: 500; color: white;" >How much time are you ready to dedicate to the organisation?</label>
                     <select class="custom-select mr-sm-2 bg-dark" style="color: white;" name="TimeCommitment" id="time">
+                    <label for="time" style="font-weight: 500; " >How much time are you ready to dedicate to the organisation (months)</label>
+                    <select class="custom-select mr-sm-2 "  name="TimeCommitment" id="time">
                         <option selected>Choose...</option>
                         <option value="8-9 hours per week">8-9 hours per week</option>
                         <option value="7-6 hours per week">7-6 hours per week</option>
                         <option value="5-4 hours per week">5-4 hours per week</option>
                         <option value="Less than 2 hours">Less than 2 hours</option>
                       </select>
-                    <!-- <input style="color: white;" type="number" name="TimeCommitment" class="form-control bg-dark" id="time"  value="" required="true"/> -->
+                    <!-- <input  type="number" name="TimeCommitment" class="form-control " id="time"  value="" required="true"/> -->
                 </div>
         
                 <div class="form-group">
@@ -210,11 +212,22 @@
                 <div class="form-group">
                     <label for="HowWillYouContributeToTheOrganisation" style="font-weight: 500; color: white;" >How will you contribute to the organisation?</label>
                     <input style="color: white;" type="text" name="HowWillYouContributeToTheOrganisation " class="form-control bg-dark inputbox" id="HowWillYouContributeToTheOrganisation"  value="" required=""/>
+                    <label for="WhyDoYouWantToJoin" style="font-weight: 500; " >Why do you want to join</label>
+                    <!-- <input  type="text" name="WhyDoYouWantToJoin" class="form-control  inputbox" id="WhyDoYouWantToJoin" value="" required="true"/> -->
+                    <textarea class="form-control" name="WhyDoYouWantToJoin" id="WhyDoYouWantToJoin" rows="3"></textarea>
+
+                </div>
+        
+                <div class="form-group">
+                    <label for="HowWillYouContributeToTheOrganisation" style="font-weight: 500;" >How will you contribute to the organisation</label>
+                    <!-- <input  type="text" name="HowWillYouContributeToTheOrganisation " class="form-control  inputbox" id="HowWillYouContributeToTheOrganisation"  value="" required=""/> -->
+                    <textarea class="form-control" name="HowWillYouContributeToTheOrganisation " id="HowWillYouContributeToTheOrganisation" rows="3"></textarea>
+
                 </div>
                 <br>
         
                 <div class="form-group">
-                    <input type="submit" name="submit" class="btnSubmit btn-block btn-outline-primary" value="Send" />
+                    <input type="submit" name="submit" class="btnSubmit btn btn-block btn-outline-danger" value="Send" />
                 </div>
             </form>
         </div>
