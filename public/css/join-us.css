@@ -1,6 +1,6 @@
 .joinUsPage{ 
    box-sizing: border-box; 
-   height: 120vh ;
+   /* height: 120vh ; */
    display: flex;
    align-items: center;
 }

@@ -1936,6 +1936,9 @@
         margin-bottom: 45px;
     }
     
+    .footer .footer-info .footer-logo img{
+        width: 300px;
+    }
     .footer .footer-info .footer-logo span {
         color: #ffffff;
         text-transform: lowercase;
@@ -1961,6 +1964,12 @@
         line-height: 20px;
         padding: 0 10px;
         border-right: 1px solid #ffffff;
+    }
+    @media (max-width:486px) {
+        .footer .footer-menu p {
+            border-right: none ;
+        }
+        
     }
     
     .footer .footer-menu p:last-child {
