@@ -22,6 +22,8 @@ return res.redirect('public/index.html');
 
 app.post('/joinus', (req,res)=>{
     const {Name ,Email,Age,WhatsappNo,TimeCommitment,WhyDoYouWantToJoin,HowWillYouContributeToTheOrganisation  } = req.body;
+
+    const time = ['8-9 hours per week','7-6 hours per week','5-4 hours per week','Less than 2 hours'];
     
     var transporter = nodemailer.createTransport({
      service: 'gmail',
@@ -30,7 +32,7 @@ app.post('/joinus', (req,res)=>{
        pass: 'tvamevsahayak'
      }
    });
-   
+    
    var mailOptions = {
      from: 'tvamevsahayakform@gmail.com',
      to: 'njha7189@gmail.com',
@@ -40,11 +42,10 @@ app.post('/joinus', (req,res)=>{
 	          Age : ${Age},
             Email : ${Email},
             WhatsApp No : ${WhatsappNo},
-            How much time are you ready to dedicate to the organisation : ${TimeCommitment},
+            How much time are you ready to dedicate to the organisation : ${time[TimeCommitment-1]},
             Why do you want to join? : ${WhyDoYouWantToJoin},
-            How will you contribute to the organisation? : ${HowWillYouContributeToTheOrganisation}
-
-            `
+            How will you contribute to the organisation? : ${HowWillYouContributeToTheOrganisation}    
+           `
    };
    
    transporter.sendMail(mailOptions, (error, info)=>{
@@ -54,6 +55,7 @@ app.post('/joinus', (req,res)=>{
        console.log('Email sent: ' + info.response);
      }
    });
+
    res.redirect('/');
    
  })
