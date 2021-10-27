@@ -202,3 +202,22 @@ small:after {
     transform: translateY(-100%) !important;
   }
 }
+
+.joinUsPage{
+  background-color: #343434; 
+  box-sizing: border-box; 
+  height: 120vh ;
+  display: flex;
+  align-items: center;
+}
+
+.joinUsPage>label{
+ font-weight: 600;
+}
+
+.JoinUsContainer{
+ box-sizing: border-box;
+ box-shadow: 1px 5px 5px 8px #131212;
+ border-radius: 5px;
+ height:fit-content;
+}
