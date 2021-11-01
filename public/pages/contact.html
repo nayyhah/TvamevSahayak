@@ -2,6 +2,22 @@
 <html>
 
 <head>
+
+    <script>
+        var queryString = location.search
+        let params = new URLSearchParams(queryString)
+        let msg = params.get('msg');
+        if (msg=='no'){
+            alert('Something Went Wrong...')
+        }else if(msg=='ok'){
+            alert('Message Recived')
+        }
+
+    </script>
+
+
+
+
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <title>Tvamev Sahayak</title>

@@ -50,12 +50,14 @@ app.post('/joinus', (req,res)=>{
    transporter.sendMail(mailOptions, (error, info)=>{
      if (error) {
        console.log(error);
-     } else {
-       console.log('Email sent: ' + info.response);
+       res.redirect('/pages/contact.html?msg=no')
+      } else {
+        console.log('Email sent: ' + info.response);
+        res.redirect('/pages/contact.html?msg=yes')
      }
    });
 
-   res.redirect('/');
+  //  res.redirect('/');
    
  })
 
