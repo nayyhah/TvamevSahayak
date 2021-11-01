@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ts-ngo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0FC34E12D59E48AD9D0FECDF779A117B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9D8D8F793C3A40EAADD0EA10798B1122 }}
           package: .
