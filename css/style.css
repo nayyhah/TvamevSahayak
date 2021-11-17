@@ -467,6 +467,14 @@
         margin-bottom: 45px;
     }
     
+    .current-work{
+        box-shadow: 0 0 10px 5px rgb(0 0 1 / 15%);
+        max-width: none;
+        min-height: 300px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
     .section-header p {
         display: inline-block;
         margin: 0 30px;
@@ -848,7 +856,7 @@
         width: 100%;
         margin: 45px 0;
         padding: 90px 0;
-        background: linear-gradient(rgba(255, 221, 102, .7), rgba(255, 221,102, .7)), url(../img/d3.png);
+        background: linear-gradient(rgba(255, 221, 102, .7), rgba(255, 221,102, .7));
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
