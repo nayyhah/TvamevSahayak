@@ -1,8 +1,3 @@
-/*begin-commonstyles library*//*!
- * froala_editor v3.2.3 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2020 Froala Labs
- */
 
 .fr-clearfix::after {
   clear: both;
@@ -93,27 +88,6 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow: visible; }
-/*.fr-view[dir="rtl"] blockquote {
-  border-left: none;
-  border-right: solid 2px #5E35B1;
-  margin-right: 0;
-  padding-right: 5px;
-  padding-left: 0; }
-  .fr-view[dir="rtl"] blockquote blockquote {
-    border-color: #00BCD4; }
-    .fr-view[dir="rtl"] blockquote blockquote blockquote {
-      border-color: #43A047; }
-.fr-view blockquote {
-  border-left: solid 2px #5E35B1;
-  margin-left: 0;
-  padding-left: 5px;
-  color: #5E35B1; }
-  .fr-view blockquote blockquote {
-    border-color: #00BCD4;
-    color: #00BCD4; }
-    .fr-view blockquote blockquote blockquote {
-      border-color: #43A047;
-      color: #43A047; }*/
   .fr-view span.fr-emoticon {
     font-weight: normal;
     font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
@@ -161,8 +135,7 @@
     .fr-view img.fr-dib {
       margin: 10px auto;
       display: block;
-      float: none;
-      vertical-align: top; }
+      float: none;}
       .fr-view img.fr-dib.fr-fil {
         margin-left: 0;
         text-align: left; }
@@ -190,8 +163,7 @@
     .fr-view span.fr-img-caption.fr-dib {
       margin: 5px auto;
       display: block;
-      float: none;
-      vertical-align: top; }
+      float: none;}
       .fr-view span.fr-img-caption.fr-dib.fr-fil {
         margin-left: 0;
         text-align: left; }
@@ -274,8 +246,7 @@
         box-sizing: border-box;
         -webkit-opacity: 0.9;
         -moz-opacity: 0.9;
-        opacity: 0.9;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        opacity: 0.9
         width: 100%;
         text-align: center; }
   .fr-view button.fr-rounded, .fr-view input.fr-rounded, .fr-view textarea.fr-rounded {
@@ -307,8 +278,7 @@ img.fr-view {
   img.fr-view.fr-dib {
     margin: 5px auto;
     display: block;
-    float: none;
-    vertical-align: top; }
+    float: none;}
     img.fr-view.fr-dib.fr-fil {
       margin-left: 0;
       text-align: left; }
@@ -337,8 +307,7 @@ span.fr-img-caption.fr-view {
   span.fr-img-caption.fr-view.fr-dib {
     margin: 5px auto;
     display: block;
-    float: none;
-    vertical-align: top; }
+    float: none;}
     span.fr-img-caption.fr-view.fr-dib.fr-fil {
       margin-left: 0;
       text-align: left; }
@@ -360,15 +329,6 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*//*begin-commonstyles library*/@charset "UTF-8";
-
-/*!
- * animate.css -https://daneden.github.io/animate.css/
- * Version - 3.7.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2019 Daniel Eden
- */
 
 @-webkit-keyframes bounce {
   from,
@@ -8366,7 +8326,6 @@ ul.u-text li:last-child {
 .u-video-poster {
   object-fit: cover;
   display: block;
-  vertical-align: middle;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -17549,11 +17508,6 @@ blockquote .small:before {
   height: 0;
   overflow: hidden;
 }
-/*begin-commonstyles photoswipe*/
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
-/*
-	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
-*/
 /* pswp = photoswipe */
 .pswp {
   display: none;
@@ -17567,7 +17521,6 @@ blockquote .small:before {
   z-index: 1500;
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
-  -webkit-backface-visibility: hidden;
   outline: none;
 }
 .pswp * {
@@ -17921,7 +17874,6 @@ blockquote .small:before {
   z-index: 1600;
   opacity: 0;
   transition: opacity 0.25s ease-out;
-  -webkit-backface-visibility: hidden;
   will-change: opacity;
 }
 .pswp__share-modal--hidden {
@@ -17939,7 +17891,6 @@ blockquote .small:before {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   transform: translateY(6px);
   transition: transform 0.25s;
-  -webkit-backface-visibility: hidden;
   will-change: transform;
 }
 .pswp__share-tooltip a {
